@@ -169,10 +169,6 @@ section {
     margin: 0 auto 72px;
 }
 
-.visually-hidden {
-    display: none;
-}
-
 .sub-title{
     font-size: 20px;
     font-weight: 500;
