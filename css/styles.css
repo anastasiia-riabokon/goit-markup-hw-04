@@ -15,13 +15,11 @@ img {
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+    display: none;
+}
+
+.visually-hidden.is-active {
+    display: block;
 }
 
 .container{
@@ -59,14 +57,9 @@ section {
     gap: 40px;
 }
 
-.studio-portf-cont .link-navigation-header{
+.link-navigation-header{
     display: block;
     width: calc((100% - 80px)/3);
-}
-
-.list-contacts .link-contacts{
-    display: block;
-    width: calc((100% - 40px)/2);
 }
 
 .logo {
@@ -104,7 +97,7 @@ section {
 
 .contacts {
     font-style: normal;
-    padding: 24px 0;
+    align-self: center;
 }
 
 .link-contacts {
