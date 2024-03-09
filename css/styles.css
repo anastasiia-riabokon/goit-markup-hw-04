@@ -108,6 +108,7 @@ section {
 /* Container Main Tittle and Button */
 .main-page{
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .main-title {
@@ -139,11 +140,6 @@ section {
     height: 56px;
 }
 
-.main-page .container{
-    padding: 188px 0;
-    max-width: 496px;
-}
-
 
 /* Container "Offers" - NONE Tittle */
 .page-offers .container{
@@ -173,8 +169,8 @@ section {
     margin: 0 auto 72px;
 }
 
-.page-offers .title-section {
-    visibility: hidden;
+.visually-hidden {
+    display: none;
 }
 
 .sub-title{
