@@ -33,7 +33,6 @@ section {
 
 /* Header */
 .header-page{
-    padding: 24px 0;
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -99,6 +98,7 @@ section {
 
 .contacts {
     font-style: normal;
+    padding: 24px 0;
 }
 
 .link-contacts {
@@ -107,6 +107,7 @@ section {
     text-transform: none;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    
 }
 
 /* Container Main Tittle and Button */
