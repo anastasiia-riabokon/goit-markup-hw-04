@@ -14,13 +14,13 @@ img {
     max-width: 100%;
 }
 
-[hidden] {
+.visually-hidden {
     display: none;
 }
 
 .container{
     max-width: 1158px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -123,6 +123,7 @@ section {
     letter-spacing: 0.02em;
     color: #fff;
     max-width: 496px;
+    margin: 0 auto;
 }
 
 .main-button {
