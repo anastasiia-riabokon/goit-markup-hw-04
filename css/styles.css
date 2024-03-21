@@ -242,9 +242,6 @@ section {
 
 
 .icon-offer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -252,11 +249,13 @@ section {
 }
 
 .item-offers .block-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f4f4fd;
     height: 112px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    display: block;
     margin-bottom: 8px;
     position: relative;
 }
@@ -420,11 +419,12 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 .icons-soc-networks-footer {
     list-style-type: none;
     display: flex;
-    gap: 24px;
+    gap: 16px;
 }
 
 .icons-soc-networks-footer .social-link:hover, .icons-soc-networks-footer .social-link:focus {
@@ -434,7 +434,6 @@ section {
 .footer-soc-networks{
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .container-logo-text{
