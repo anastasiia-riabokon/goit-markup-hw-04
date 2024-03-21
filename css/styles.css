@@ -108,8 +108,7 @@ section {
 .link-navigation-header:hover,
 .link-navigation-header:focus,
 .link-contacts:hover,
-.link-contacts:focus,
-.studio-portf-cont li:first-child:active {
+.link-contacts:focus {
     color: #404bbf;
 }
 
@@ -129,22 +128,22 @@ section {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
-.studio-portf-cont li:first-child{
+.element-studio .link-navigation-header{
     position: relative;
-    color: #404bbf;
 }
         
 
-.studio-portf-cont li:first-child:active::after {
+.element-studio .link-navigation-header:active::after {
     content:'';
     position: absolute;
     left: 0;
     bottom: -1px;
     display: block;
-    width: 100%;/*ширина псевдоэлемента*/
-    height: 4px;/*высота псевдоэлемента (толщина подчеркивания) */
-    background-color:#404bbf;
+    width: 48px;
+    height: 4px;
     border-radius: 2px;
+    color: #404bbf;
+    background-color: #404bbf;
 }
 
 /* Container Main Tittle and Button */
@@ -243,6 +242,9 @@ section {
 
 
 .icon-offer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -252,9 +254,6 @@ section {
 .item-offers .block-icon{
     background-color: #f4f4fd;
     height: 112px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     display: block;
@@ -379,7 +378,7 @@ section {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.item-portfolio:hover .overlay{
+.item-portfolio:hover{
     transform: translatey(0%);
 }
 
