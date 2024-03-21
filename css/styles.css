@@ -130,19 +130,19 @@ section {
 
 .element-studio .link-navigation-header{
     position: relative;
+    color: #404bbf;
 }
         
 
-.element-studio .link-navigation-header:active::after {
+.element-studio .link-navigation-header::after {
     content:'';
     position: absolute;
     left: 0;
     bottom: -1px;
     display: block;
-    width: 48px;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
-    color: #404bbf;
     background-color: #404bbf;
 }
 
@@ -378,8 +378,8 @@ section {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.item-portfolio:hover{
-    transform: translatey(0%);
+.item-portfolio:hover .text-overlay{
+    transform: translateY(0%);
 }
 
 .text-container-for-page-portfolio{
