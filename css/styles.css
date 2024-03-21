@@ -73,6 +73,16 @@ section {
 .link-navigation-header{
     display: block;
     width: calc((100% - 80px)/3);
+    font-size: 16px;
+    font-weight: 500;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 24px 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -90,19 +100,6 @@ section {
 
 .color-dark-gray-text {
     color: #2e2f42;
-}
-
-.link-navigation-header {
-    font-size: 16px;
-    font-weight: 500;
-    color: #2e2f42;
-    letter-spacing: 0.02em;
-    line-height: 1.5;
-    text-decoration: none;
-    padding: 24px 0;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-navigation-header:hover,
@@ -131,15 +128,15 @@ section {
 .element-studio .link-navigation-header{
     position: relative;
     color: #404bbf;
+    width: inherit;
 }
         
 
 .element-studio .link-navigation-header::after {
-    content:'';
+    content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
-    display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -298,7 +295,7 @@ section {
     fill:#f4f4fd;
 }
 /* list social networks */
-.icons-soc-networks{
+.list-soc-networks{
     list-style-type: none;
     display: flex;
     gap: 24px;
@@ -319,7 +316,7 @@ section {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.icons-soc-networks .social-link:hover, .icons-soc-networks .social-link:focus{
+.list-soc-networks .social-link:hover, .list-soc-networks .social-link:focus{
     background-color:#404bbf;
 }
 
@@ -421,13 +418,13 @@ section {
     color: #fff;
     margin-bottom: 16px;
 }
-.icons-soc-networks-footer {
+.list-soc-networks-footer {
     list-style-type: none;
     display: flex;
     gap: 16px;
 }
 
-.icons-soc-networks-footer .social-link:hover, .icons-soc-networks-footer .social-link:focus {
+.list-soc-networks-footer .social-link:hover, .list-soc-networks-footer .social-link:focus {
     background-color: #31d0aa;
 }
 
