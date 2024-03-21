@@ -47,6 +47,9 @@ section {
 /* Header */
 .header-page{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-page .container{
@@ -82,6 +85,7 @@ section {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 76px;
+
 }
 
 .color-dark-gray-text {
@@ -125,13 +129,22 @@ section {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
+.studio-portf-cont li:first-child{
+    position: relative;
+    color: #404bbf;
+}
+        
+
 .studio-portf-cont li:first-child:active::after {
-    content: "";
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
     display: block;
-    width: 48px;/*ширина псевдоэлемента*/
+    width: 100%;/*ширина псевдоэлемента*/
     height: 4px;/*высота псевдоэлемента (толщина подчеркивания) */
-    border-radius: 2px;
     background-color:#404bbf;
+    border-radius: 2px;
 }
 
 /* Container Main Tittle and Button */
@@ -143,6 +156,7 @@ section {
     background-repeat:no-repeat;
     background-position:50% 50%;
     padding: 188px 0;
+    max-width: 1440px;
 }
 
 .main-title {
@@ -238,6 +252,9 @@ section {
 .item-offers .block-icon{
     background-color: #f4f4fd;
     height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     display: block;
@@ -277,6 +294,12 @@ section {
 }
 
 /* Social Networks */
+
+/* class svg */
+.icon-soc-net{
+    fill:#f4f4fd;
+}
+/* list social networks */
 .icons-soc-networks{
     list-style-type: none;
     display: flex;
@@ -324,31 +347,32 @@ section {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
     
 }
 
-.overlay{
+.overlay-portfolio {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.text-overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
-    transition-property:opacity, transform;
+    transition-property:transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
     transform: translatey(100%);
-}
-
-.overlay p{
     font-size:16px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    padding: 40px 32px 164px;
+    padding: 40px 32px;
 }
 
 .item-portfolio:hover {
@@ -356,8 +380,7 @@ section {
 }
 
 .item-portfolio:hover .overlay{
-    transform: translatey(0);
-    opacity: 1;
+    transform: translatey(0%);
 }
 
 .text-container-for-page-portfolio{
@@ -388,6 +411,7 @@ section {
 
 .footer-page .container{
     display: flex;
+    align-items: baseline
 }
 
 /* Social Networks Footer */
@@ -397,7 +421,6 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-    margin-bottom: 16px;
 }
 .icons-soc-networks-footer {
     list-style-type: none;
@@ -412,6 +435,10 @@ section {
 .footer-soc-networks{
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    gap: 16px;
+}
+
+.container-logo-text{
+    margin-right: 120px;
 }
 
